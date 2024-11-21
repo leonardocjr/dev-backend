@@ -1,0 +1,15 @@
+<html>
+<body>
+  <h1>Lista de Tarefas</h1>
+  <form action="/addtarefa" method="POST">
+    <input type="text" name="tarefa" placeholder="Digite uma nova tarefa" required />
+    <button type="submit">Adicionar</button>
+  </form>
+  <ul>
+    {{#tarefas}}
+      <li>{{.}}</li>
+    {{/tarefas}}
+  </ul>
+  <a href="/">Voltar</a>
+</body>
+</html>

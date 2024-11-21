@@ -1,0 +1,12 @@
+<html>
+<body>
+  <h1>Bem-vindo {{nome}}</h1>
+  <form action="/salvauser" method="POST">
+    <input type="text" name="nome" placeholder="Digite seu nome" value="{{nome}}" required />
+    <button type="submit">Salvar</button>
+  </form>
+  <a href="/random">Gerar número aleatório</a><br>
+  <a href="/contador">Contador</a><br>
+  <a href="/tarefas">Tarefas</a>
+</body>
+</html>
